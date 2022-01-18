@@ -1,0 +1,84 @@
+
+.body {
+    display: grid;
+    background-color: rgb(156, 62, 15);
+    grid-template-areas:
+    'div           div      div'
+    'input        input    input'
+    'show_movie    show     show ';
+    
+}
+    
+.div {
+    grid-area: div;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+} 
+
+.Input {
+    grid-area: input;
+    text-align: center;
+    font-size:30px;
+    color: rgb(43, 40, 40);
+    cursor:pointer;
+    margin: 5px;
+    padding: 5px;
+    transition-duration:2s;
+    border-radius: 5px;
+}
+.input:hover{
+    background:rgb(175, 170, 177);
+    color:rgb(49, 50, 51);
+}
+
+ul li {
+    grid-area: show_movie;
+    font-family:cursive;
+    list-style:none;
+    cursor: pointer;
+    position:static;
+    width:80% ;
+    padding: 12px 8px;
+    background: rgb(184, 173, 182);
+    font-size: 18px;
+    transition: 0.2s;
+}
+ul li:hover {
+    background: rgb(105, 92, 107);
+}
+
+ul li:nth-child(odd) {
+    background: #ece2e9;
+}
+
+ul li:hover:nth-child(odd){
+    background: rgb(145, 137, 146);
+}  
+
+.show{
+    grid-area: show;
+    font-family: cursive;
+    text-align: left;
+    font-size: 20px;
+    color: white;
+    font-weight: normal;
+}
+
+
+#my_input {
+    width: 300px;
+    font-size: 20px;
+}
+
+.search_btn{
+    width: 10%;
+    font-size: 16px;
+}
+
+.title{
+    font-size: 20px;
+    color:rgb(39, 151, 226);
+    font-weight: bold;
+}
+
